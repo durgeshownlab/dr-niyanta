@@ -379,7 +379,7 @@ body {
 
 .c-why-choose-us-section-container {
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5294117647), rgba(0, 0, 0, 0.6196078431)), url(../images/bg/why-choose-us.jpg);
-  padding: 50px 0px;
+  padding: 50px 15px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
