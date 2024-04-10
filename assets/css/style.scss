@@ -55,11 +55,42 @@ body{
                 {
                     width: max-content;
                     height: 100%;
+                    display: flex;
+                    text-decoration: none;
+                    color: $primary;
 
                     .c-logo 
                     {
                         height: 100%;
                         width: max-content;
+                    }
+
+                    .c-logo-text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        h1 {
+                            font-size: 1.2rem;
+                            font-weight: 800;
+                            margin: 0;
+                            padding: 0;
+
+                            @media (max-width: $tablet-breakdown) {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        p {
+                            font-size: .9rem;
+                            font-weight: 400;
+                            margin: 0;
+                            padding: 0;
+
+                            @media (max-width: $tablet-breakdown) {
+                                font-size: .8rem;
+                            }
+                        }
                     }
                 }
 
@@ -421,6 +452,20 @@ body{
         background-color: $white;
         padding: 20px 15px;
         border-radius: 5px;
+        position: relative;
+
+        .c-extra-heading {
+            position: absolute;
+            top: -80px;
+            left: 0;
+            color: $secondary;
+            background-color: $white;
+            padding: 10px 30px;
+            font-family: Roboto;
+            font-weight: 700;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
 
         .c-why-choose-us-heading {
             display: flex;

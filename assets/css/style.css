@@ -45,11 +45,41 @@ body {
   width: -moz-max-content;
   width: max-content;
   height: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #008036;
 }
 .c-header-container .c-navbar-container .c-navbar .c-logo-menu-toogle-container .c-logo-container .c-logo {
   height: 100%;
   width: -moz-max-content;
   width: max-content;
+}
+.c-header-container .c-navbar-container .c-navbar .c-logo-menu-toogle-container .c-logo-container .c-logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.c-header-container .c-navbar-container .c-navbar .c-logo-menu-toogle-container .c-logo-container .c-logo-text h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .c-header-container .c-navbar-container .c-navbar .c-logo-menu-toogle-container .c-logo-container .c-logo-text h1 {
+    font-size: 1rem;
+  }
+}
+.c-header-container .c-navbar-container .c-navbar .c-logo-menu-toogle-container .c-logo-container .c-logo-text p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .c-header-container .c-navbar-container .c-navbar .c-logo-menu-toogle-container .c-logo-container .c-logo-text p {
+    font-size: 0.8rem;
+  }
 }
 .c-header-container .c-navbar-container .c-navbar .c-logo-menu-toogle-container .c-menu-toogle-btn-container {
   height: 100%;
@@ -387,6 +417,19 @@ body {
   background-color: #fff;
   padding: 20px 15px;
   border-radius: 5px;
+  position: relative;
+}
+.c-why-choose-us-section-container .c-why-choose-us-container .c-extra-heading {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  color: #052041;
+  background-color: #fff;
+  padding: 10px 30px;
+  font-family: Roboto;
+  font-weight: 700;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 .c-why-choose-us-section-container .c-why-choose-us-container .c-why-choose-us-heading {
   display: flex;
