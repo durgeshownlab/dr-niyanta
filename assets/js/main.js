@@ -51,4 +51,14 @@ $(document).ready(function(){
         }
     });
 
+
+    // code for flickty testimonials  
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        pageDots: false
+    });
+
+
 });
