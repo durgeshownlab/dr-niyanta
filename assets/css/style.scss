@@ -869,7 +869,7 @@ a {
 }
 
 
-// █████╗ ██████╗  ██████╗ ██╗   ██╗████████╗    ██╗   ██╗███████╗
+//  █████╗ ██████╗  ██████╗ ██╗   ██╗████████╗    ██╗   ██╗███████╗
 // ██╔══██╗██╔══██╗██╔═══██╗██║   ██║╚══██╔══╝    ██║   ██║██╔════╝
 // ███████║██████╔╝██║   ██║██║   ██║   ██║       ██║   ██║███████╗
 // ██╔══██║██╔══██╗██║   ██║██║   ██║   ██║       ██║   ██║╚════██║
@@ -1174,6 +1174,285 @@ a {
 
                         }
                     }
+                }
+            }
+    
+        }
+
+    }    
+}
+
+
+//  ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗  ██████╗████████╗    ██╗   ██╗███████╗
+// ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██╔════╝╚══██╔══╝    ██║   ██║██╔════╝
+// ██║     ██║   ██║██╔██╗ ██║   ██║   ███████║██║        ██║       ██║   ██║███████╗
+// ██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██║██║        ██║       ██║   ██║╚════██║
+// ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║╚██████╗   ██║       ╚██████╔╝███████║
+//  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝        ╚═════╝ ╚══════╝
+                                                                                  
+
+// code for welcome 
+.c-contact-us-section-container {
+    background-color: $white;
+    padding: 50px 10px;
+
+    .c-contact-us-container {
+        background-color: $white;
+        // padding: 20px 15px;
+        padding: 0;
+        border-radius: 5px;
+        // border: 1px solid red;
+
+        
+        .c-contact-us-content {
+
+            .c-contact-us-heading {
+
+                h1 {
+                    font-size: 2.5rem;
+                    font-weight: 800;
+                    text-transform: capitalize;
+                    letter-spacing: 0px;
+                    color: $secondary;
+                    text-align: center;
+                    // margin-bottom: 20px;
+        
+                    @media (max-width: $tablet-breakdown) {
+                        font-size: 2.2rem;
+                        text-align: center;
+                        margin: 10px 0;
+                    }
+        
+                    @media (max-width: $mobile-breakdown) {
+                        font-size: 1.7rem;
+                        text-align: center;
+                    }
+                }
+        
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    line-height: 25px;
+                    text-transform: capitalize;
+                    color: $secondary;
+                    margin-top: -10px;
+                    text-align: center;
+        
+                    @media (max-width: $tablet-breakdown) {
+                        text-align: center;
+                    }
+        
+                    @media (max-width: $mobile-breakdown) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .c-contact-us-card-container {
+                width: 100%;
+
+                .c-contact-us-background-container {
+                    width: 100%;
+
+                    .c-contact-us-background {
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 10px;
+
+                        @media (max-width: $mobile-breakdown) {
+                            height: 150px;
+                        }
+                    }
+
+                }
+
+                .c-contact-us-card-group-container {
+                    margin-top: -100px;
+                    padding: 0 20px;
+
+                    @media (max-width: $mobile-breakdown) {
+                        margin-top: -75px;
+                        padding: 0 10px;
+                    }
+
+                    .c-contact-us-card-container {
+                        width: 100%;
+                        // border: 1px solid red;
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        row-gap: 30px;
+            
+            
+                        .c-contact-us-card {
+                            width: 30%;
+                            border: 1px solid $primary;
+                            background-color: $white;
+                            padding: 10px 10px;
+                            border-radius: 5px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            // background-image: url(../images/testimonials/leaf.png);
+                            // background-position: top left;
+                            // background-repeat: no-repeat;
+                            // background-size: auto;
+            
+                            @media (max-width: $laptop-breakdown) {
+                                width: 45%;
+                            }
+            
+                            @media (max-width: $tablet-breakdown) {
+                                width: 100%;
+                            }
+            
+                            @media (max-width: $mobile-breakdown) {
+                                width: 100%;
+                                padding: 10px 10px;
+            
+                            }
+
+                            &:hover {
+                                .c-contact-us-image {
+                                    border-bottom-left-radius: 100px;
+                                    border-top-right-radius: 100px;
+                                }
+                            }
+            
+                            .c-contact-us-icon {
+                                width: fit-content;
+                                height: auto;
+                                padding: 10px;
+                                object-fit: cover;
+                                object-position: center;
+                                border-radius: 50px;
+                                transition: all .3s ease-in;
+                                display: flex;
+                                justify-content: center;
+                                border: 2px solid $primary;
+                            }
+
+                            .c-contact-us-desc {
+                                text-align: center;
+                                margin: 10px 0;
+                                font-family: poppins;
+                                font-size: 1.3rem;
+                                font-weight: 700;
+                                color: $secondary;
+            
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 3; 
+                                -webkit-box-orient: vertical;
+                                text-overflow: ellipsis;
+                            }
+            
+                            .c-contact-us-name {
+                                text-align: center;
+                                font-family: poppins;
+                                font-weight: 500;
+                                font-size: 1.2rem;
+                                margin-bottom: 20px;
+                                color: $secondary;
+            
+                            }
+            
+                            
+
+                        }
+                    }
+                }
+            }
+
+            .c-map-form-container {
+                width: 100%;
+                // border: 1px solid red;
+                display: flex;
+                margin: 20px 0;
+                margin-top: 50px;
+                padding: 10px;
+                flex-wrap: wrap;
+                box-shadow: 0 0 13px 0px #80808066;
+
+                @media (max-width: $tablet-breakdown) {
+                    flex-direction: column;
+                }
+
+                .c-title-map-form {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 30px 0px 20px 0px;
+
+                    h2 {
+                        font-family: poppins;
+                        font-weight: 600;
+                        text-align: center;
+                        font-size: 1.8rem;
+
+                        @media (max-width: $tablet-breakdown) {
+                            font-size: 1.4rem;
+                        }
+
+                        @media (max-width: $mobile-breakdown) {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                .c-map-form-section {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    row-gap: 20px;
+
+                    @media (max-width: $tablet-breakdown) {
+                    flex-direction: column-reverse;
+                }
+
+                    .c-map-container {
+                        width: 49%;
+                        border: 1px solid $primary-light;
+                        border-radius: 5px;
+                        padding: 10px;
+    
+                        @media (max-width: $tablet-breakdown) {
+                            width: 100%;
+                        }
+    
+                        iframe {
+                            width: 100%;
+                            height: 100%;
+                            min-height: 250px;
+                            margin: 0;
+                            display: block;
+                        }
+                    }
+    
+                    .c-form-container {
+                        width: 49%;
+                        padding: 10px;
+                        border: 1px solid $primary;
+                        border-radius: 5px;
+    
+                        @media (max-width: $tablet-breakdown) {
+                            width: 100%;
+                        }
+
+                        div {
+                            input, textarea {
+                                background-color: $white;
+                                box-shadow: -2px 3px 20px -14px $secondary;
+
+                                &:focus {
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
     
