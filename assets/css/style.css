@@ -1262,4 +1262,17 @@ a {
 .c-contact-us-section-container .c-contact-us-container .c-contact-us-content .c-map-form-container .c-map-form-section .c-form-container div input, .c-contact-us-section-container .c-contact-us-container .c-contact-us-content .c-map-form-container .c-map-form-section .c-form-container div textarea {
   background-color: #fff;
   box-shadow: -2px 3px 20px -14px #052041;
+}
+.c-footer-container {
+  background-color: #052041;
+  color: #fff;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-footer-container p {
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
