@@ -59,6 +59,12 @@ a {
   width: -moz-max-content;
   width: max-content;
 }
+@media (max-width: 425px) {
+  .c-header-container .c-navbar-container .c-navbar .c-logo-menu-toogle-container .c-logo-container .c-logo {
+    width: 90%;
+    height: auto;
+  }
+}
 .c-header-container .c-navbar-container .c-navbar .c-logo-menu-toogle-container .c-logo-container .c-logo-text {
   display: flex;
   flex-direction: column;

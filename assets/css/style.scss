@@ -68,6 +68,11 @@ a {
                     {
                         height: 100%;
                         width: max-content;
+
+                        @media (max-width: $mobile-breakdown) {
+                            width: 90%;
+                            height: auto;
+                        }
                     }
 
                     .c-logo-text {
