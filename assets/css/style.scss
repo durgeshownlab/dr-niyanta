@@ -295,6 +295,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: $white;
+    column-gap: 10px;
 
     @media (max-width: $tablet-breakdown) {
         flex-direction: column;
@@ -325,12 +326,16 @@ a {
     .c-right {
         width: fit-content;
         max-width: 450px;
-        border: 1px solid rgb(222, 222, 222);
+        border: 1px solid rgb(174, 174, 174);
         border-radius: 5px;
-        margin-left: -50px;
+        // margin-left: -50px;
         background-color: $glass;
         backdrop-filter: blur(10px);
-        padding: 5px 10px;
+        padding: 55px 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1 !important;
 
         @media (max-width: $tablet-breakdown) {
             margin-left: 0;
@@ -340,27 +345,58 @@ a {
             width: 90%;
         }
 
+        &::before {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background-color: $primary;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1 !important;
+            box-shadow: 0 0 75px 20px $primary;
+        }
+
+        &::after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background-color: $primary;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1 !important;
+            box-shadow: 0 0 75px 20px $primary;
+        }
+
         h1 {
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 2px;
             color: $secondary;
+            // line-height: 85px;
+            margin-top: -10px;
+            margin-bottom: 20px;
 
             @media (max-width: $tablet-breakdown) {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 text-align: center;
             }
 
             @media (max-width: $mobile-breakdown) {
-                font-size: 2rem;
+                font-size: 1.7rem;
                 text-align: center;
             }
         }
 
         p {
-            font-size: 1.2rem;
-            font-weight: 500;
+            font-size: 1.1rem;
+            font-family: poppins;
+            line-height: 1.9rem;
+            font-weight: 400;
             line-height: 25px;
             text-transform: capitalize;
             color: $secondary;
@@ -373,6 +409,22 @@ a {
             @media (max-width: $mobile-breakdown) {
                 font-size: 1rem;
             }
+        }
+
+        .c-sub-heading {
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 30px;
+            margin-bottom: 25px;
+
+            @media (max-width: $mobile-breakdown) {
+                font-size: 1.2rem !important;
+            }
+        }
+
+        button {
+            width: fit-content;
+            margin: 0 auto;
         }
     }
 }
@@ -463,11 +515,16 @@ a {
         padding: 20px 15px;
         border-radius: 5px;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .c-extra-heading {
-            position: absolute;
-            top: -80px;
-            left: 0;
+            // position: absolute;
+            // top: -80px;
+            // left: 50%;
+            margin-top: -100px;
+            margin-bottom: 50px;
             color: $secondary;
             background-color: $white;
             padding: 10px 30px;
@@ -698,6 +755,7 @@ a {
                     font-weight: 400;
                     font-size: 1rem;
                     margin: 0;
+                    text-transform: capitalize;
                 }
             }
         }
