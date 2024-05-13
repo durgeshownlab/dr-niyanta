@@ -329,12 +329,13 @@ a {
         border: 1px solid rgb(174, 174, 174);
         border-radius: 5px;
         // margin-left: -50px;
-        background-color: $glass;
+        background-color: #008036a1;
         backdrop-filter: blur(10px);
         padding: 55px 10px;
         display: flex;
         flex-direction: column;
         position: relative;
+        color: $white;
         z-index: 1 !important;
 
         @media (max-width: $tablet-breakdown) {
@@ -345,38 +346,38 @@ a {
             width: 90%;
         }
 
-        &::before {
-            content: '';
-            width: 50px;
-            height: 50px;
-            background-color: $primary;
-            border-radius: 50%;
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: -1 !important;
-            box-shadow: 0 0 75px 20px $primary;
-        }
+        // &::before {
+        //     content: '';
+        //     width: 50px;
+        //     height: 50px;
+        //     background-color: $primary;
+        //     border-radius: 50%;
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     z-index: -1 !important;
+        //     box-shadow: 0 0 75px 20px $primary;
+        // }
 
-        &::after {
-            content: '';
-            width: 50px;
-            height: 50px;
-            background-color: $primary;
-            border-radius: 50%;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: -1 !important;
-            box-shadow: 0 0 75px 20px $primary;
-        }
+        // &::after {
+        //     content: '';
+        //     width: 50px;
+        //     height: 50px;
+        //     background-color: $primary;
+        //     border-radius: 50%;
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     z-index: -1 !important;
+        //     box-shadow: 0 0 75px 20px $primary;
+        // }
 
         h1 {
             font-size: 2rem;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: $secondary;
+            color: $white;
             // line-height: 85px;
             margin-top: -10px;
             margin-bottom: 20px;
@@ -399,7 +400,7 @@ a {
             font-weight: 400;
             line-height: 25px;
             text-transform: capitalize;
-            color: $secondary;
+            color: $white;
             margin-top: -10px;
 
             @media (max-width: $tablet-breakdown) {
@@ -425,6 +426,8 @@ a {
         button {
             width: fit-content;
             margin: 0 auto;
+            box-shadow: 0 0 100px 10px $primary;
+            border: 2px solid $white;
         }
     }
 }
@@ -598,6 +601,118 @@ a {
         }
 
         .c-welcome-content {
+
+            p {
+                color: $secondary;
+                font-size: 1.1rem;
+                font-family: poppins;
+                line-height: 1.9rem;
+                // word-spacing: 1px;
+                text-align: justify;
+                margin-bottom: 20px;
+                font-weight: 400;
+
+                @media (max-width: $mobile-breakdown) {
+                    font-size: 1rem;
+                    line-height: 1.7rem;
+
+                }
+            }
+        }
+
+        .c-book-appointment-button-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            
+        }
+
+    }    
+}
+
+// code for Homoeopathic Consultation 
+.c-homoeopathic-consultation-section-container {
+    // background-image: linear-gradient(90deg, #00000087, #0000009e), url(../images/bg/why-choose-us.jpg);
+    padding: 50px 15px;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+
+    .c-homoeopathic-consultation-container {
+        background-color: $white;
+        padding: 20px 15px;
+        border-radius: 5px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .c-extra-heading {
+            // position: absolute;
+            // top: -80px;
+            // left: 50%;
+            margin-top: -100px;
+            margin-bottom: 50px;
+            color: $secondary;
+            background-color: $white;
+            padding: 10px 30px;
+            font-family: Roboto;
+            font-weight: 700;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .c-homoeopathic-consultation-heading {
+            display: flex;
+            justify-content: center;
+
+
+            h1 {
+                width: fit-content;
+                font-size: 3rem;
+                font-weight: 800;
+                text-transform: capitalize;
+                letter-spacing: 0px;
+                color: $primary;
+                text-align: center;
+                margin-bottom: 20px;
+                position: relative;
+                z-index: 1;
+                border-bottom: 5px solid $primary;
+                // -webkit-text-stroke-color: $primary;
+                // -webkit-text-stroke-width: 2px;
+    
+                @media (max-width: $tablet-breakdown) {
+                    font-size: 2.5rem;
+                    text-align: center;
+                }
+    
+                @media (max-width: $mobile-breakdown) {
+                    font-size: 1.7rem;
+                    text-align: center;
+                }
+            }
+    
+            p {
+                font-size: 1.2rem;
+                font-weight: 500;
+                line-height: 25px;
+                text-transform: capitalize;
+                color: $secondary;
+                margin-top: -10px;
+                text-align: center;
+    
+                @media (max-width: $tablet-breakdown) {
+                    text-align: center;
+                }
+    
+                @media (max-width: $mobile-breakdown) {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .c-homoeopathic-consultation-content {
 
             p {
                 color: $secondary;

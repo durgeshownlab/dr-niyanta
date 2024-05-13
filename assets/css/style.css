@@ -300,13 +300,14 @@ a {
   max-width: 450px;
   border: 1px solid rgb(174, 174, 174);
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.3803921569);
+  background-color: rgba(0, 128, 54, 0.631372549);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   padding: 55px 10px;
   display: flex;
   flex-direction: column;
   position: relative;
+  color: #fff;
   z-index: 1 !important;
 }
 @media (max-width: 768px) {
@@ -320,36 +321,12 @@ a {
     width: 90%;
   }
 }
-.c-banner-container .c-right::before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-color: #008036;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1 !important;
-  box-shadow: 0 0 75px 20px #008036;
-}
-.c-banner-container .c-right::after {
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-color: #008036;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1 !important;
-  box-shadow: 0 0 75px 20px #008036;
-}
 .c-banner-container .c-right h1 {
   font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #052041;
+  color: #fff;
   margin-top: -10px;
   margin-bottom: 20px;
 }
@@ -372,7 +349,7 @@ a {
   font-weight: 400;
   line-height: 25px;
   text-transform: capitalize;
-  color: #052041;
+  color: #fff;
   margin-top: -10px;
 }
 @media (max-width: 768px) {
@@ -400,6 +377,8 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  box-shadow: 0 0 100px 10px #008036;
+  border: 2px solid #fff;
 }
 
 .c-welcome-section-container {
@@ -558,6 +537,99 @@ a {
   }
 }
 .c-why-choose-us-section-container .c-why-choose-us-container .c-book-appointment-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.c-homoeopathic-consultation-section-container {
+  padding: 50px 15px;
+}
+.c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container {
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container .c-extra-heading {
+  margin-top: -100px;
+  margin-bottom: 50px;
+  color: #052041;
+  background-color: #fff;
+  padding: 10px 30px;
+  font-family: Roboto;
+  font-weight: 700;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container .c-homoeopathic-consultation-heading {
+  display: flex;
+  justify-content: center;
+}
+.c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container .c-homoeopathic-consultation-heading h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  color: #008036;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  border-bottom: 5px solid #008036;
+}
+@media (max-width: 768px) {
+  .c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container .c-homoeopathic-consultation-heading h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container .c-homoeopathic-consultation-heading h1 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+}
+.c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container .c-homoeopathic-consultation-heading p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #052041;
+  margin-top: -10px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container .c-homoeopathic-consultation-heading p {
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container .c-homoeopathic-consultation-heading p {
+    font-size: 1rem;
+  }
+}
+.c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container .c-homoeopathic-consultation-content p {
+  color: #052041;
+  font-size: 1.1rem;
+  font-family: poppins;
+  line-height: 1.9rem;
+  text-align: justify;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+@media (max-width: 425px) {
+  .c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container .c-homoeopathic-consultation-content p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+}
+.c-homoeopathic-consultation-section-container .c-homoeopathic-consultation-container .c-book-appointment-button-container {
   width: 100%;
   display: flex;
   justify-content: center;
