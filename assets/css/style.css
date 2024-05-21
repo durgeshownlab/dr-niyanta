@@ -1393,6 +1393,30 @@ a {
   background-color: #fff;
   box-shadow: -2px 3px 20px -14px #052041;
 }
+.c-faqs-page-section-container {
+  padding: 50px 10px;
+}
+.c-faqs-page-section-container .c-faqs-page-container {
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 5px;
+}
+.c-faqs-page-section-container .c-faqs-page-container .c-faqs-heading h1 {
+  font-family: poppins;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: #008036;
+}
+.c-faqs-page-section-container .c-faqs-page-container .c-faqs-sub-heading h2 {
+  font-family: poppins;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.c-faqs-page-section-container .c-faqs-page-container .c-faqs-content-container {
+  margin: 20px 0;
+}
+
 .c-footer-container {
   background-color: #052041;
   color: #fff;

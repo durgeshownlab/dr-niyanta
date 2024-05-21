@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IERWF | Home</title>
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/logo.svg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- cdn for box icons  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- book appointment modal  -->
+    <div
+      class="modal fade"
+      id="book-appointment-popup"
+      tabindex="-1"
+      aria-labelledby="book-appointment-popupTitle"
+      bis_skin_checked="1"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        bis_skin_checked="1"
+      >
+        <div class="modal-content" bis_skin_checked="1">
+          <div class="modal-header" bis_skin_checked="1">
+            <h1
+              class="modal-title fs-5"
+              id="exampleModalCenteredScrollableTitle"
+            >
+              Book Appointment Now
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" bis_skin_checked="1">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="mobile" class="form-label">Mobile</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="mobile"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Address" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <label for="date" class="form-label">Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="date"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="time" class="form-label">Time</label>
+                  <input
+                    type="time"
+                    class="form-control"
+                    id="time"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer" bis_skin_checked="1">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-success">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- header section start -->
+    <header class="c-header-container">
+      <nav class="c-navbar-container">
+        <div class="container-fluid c-navbar" bis_skin_checked="1">
+          <!-- logo and  toogle container   -->
+          <div class="c-logo-menu-toogle-container">
+            <!-- logo code  -->
+            <a href="/" class="c-logo-container">
+              <img src="assets/images/logo/logo.png" alt="" class="c-logo" />
+              <!-- <div class="c-logo-text">
+                            <h1>Holistic Homoeo Healing</h1>
+                            <p>By Dr. Niyanta</p>
+                        </div> -->
+            </a>
+
+            <!-- menu toggle btn  -->
+            <div class="c-menu-toogle-btn-container">
+              <div class="c-menu-toggle-btn">
+                <img src="assets/images/icons/menu.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- menu bar code  -->
+          <div class="c-menu-bar-container">
+            <div class="c-close-btn-container">
+              <box-icon
+                name="x"
+                color="#ffffff"
+                size="50px"
+                class="c-close-btn"
+              ></box-icon>
+            </div>
+            <ul class="c-menu-bar">
+              <li class="c-menu-item">
+                <a href="index.html" class="c-active">Home</a>
+              </li>
+              <li class="c-menu-item">
+                <a href="about.html">About</a>
+              </li>
+              <li class="c-menu-item">
+                <a href="our-service.html">Our Services</a>
+              </li>
+              <li class="c-menu-item">
+                <a href="faqs.html">Faq's</a>
+              </li>
+              <li class="c-menu-item">
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- call to action code  -->
+          <div class="c-nav-btn-container">
+            <a
+              href="#"
+              class="c-btn btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#book-appointment-popup"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header section end  -->
+
+    <!-- About us page content section start  -->
+    <section class="container-fluid c-faqs-page-section-container">
+      <div class="container c-faqs-page-container">
+        <div class="c-faqs-heading">
+          <h1>Faq's</h1>
+        </div>
+
+        <div class="c-faqs-sub-heading">
+          <h2>Homeopathy FAQ</h2>
+        </div>
+        <div class="c-faqs-content-container">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <b>1. What is homeopathy?</b>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Homeopathy is a natural form of medicine that uses highly
+                  diluted substances to stimulate the body’s self-healing
+                  mechanisms. It is based on the principle of "like cures like,"
+                  meaning a substance that causes symptoms in a healthy person
+                  can be used to treat similar symptoms in a sick person.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <b>2. How does homeopathy work?</b>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Homeopathy works by stimulating the body's natural defenses.
+                  Remedies are prepared through a process of serial dilution and
+                  succussion (vigorous shaking) which enhances their therapeutic
+                  effects despite the extreme dilution.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading3">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse3"
+                  aria-expanded="false"
+                  aria-controls="collapse3"
+                >
+                  <b>3. What conditions can be treated with homeopathy?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse3"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading3"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Homeopathy can address a wide range of conditions including
+                  allergies, asthma, skin conditions, digestive disorders,
+                  migraines, chronic fatigue, and emotional issues like anxiety
+                  and depression. All in all homoeopathy is suited for all
+                  health derangements at physical as well as mental plane.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse4"
+                  aria-expanded="false"
+                  aria-controls="collapse4"
+                >
+                  <b>4. Is homeopathy safe for children and pregnant women?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse4"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading4"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Yes, homeopathy is considered safe for both children and
+                  pregnant women as it uses highly diluted substances, reducing
+                  the risk of side effects. However, it’s always important to
+                  consult with a qualified homeopath or healthcare provider.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse5"
+                  aria-expanded="false"
+                  aria-controls="collapse5"
+                >
+                  <b
+                    >5. What should I expect during my first homeopathic
+                    consultation?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse5"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading5"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - The first consultation typically involves a detailed
+                  discussion about your health, lifestyle, medical history, and
+                  emotional well-being. This will help Dr. Niyanta to understand
+                  your unique symptoms and choose the most appropriate remedy.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading6">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse6"
+                  aria-expanded="false"
+                  aria-controls="collapse6"
+                >
+                  <b
+                    >6. Are there any side effects of homeopathic treatments?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse6"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading6"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Homeopathic remedies are generally considered safe with
+                  minimal risk of side effects. However, some individuals might
+                  experience a temporary worsening of symptoms, known as a
+                  homeopathic aggravation, which usually indicates that the
+                  remedy is working.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading7">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse7"
+                  aria-expanded="false"
+                  aria-controls="collapse7"
+                >
+                  <b
+                    >7. How will a patient know what medicines are they taking
+                    in homoeopathy?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse7"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading7"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - We aim to educate as well as treat the patient. Dr. Niyanta
+                  provides written prescriptions to all her patients. This way
+                  you will know what you are consuming and how it affects your
+                  body.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading8">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse8"
+                  aria-expanded="false"
+                  aria-controls="collapse8"
+                >
+                  <b
+                    >8. How long does it take for homeopathic remedies to
+                    work?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse8"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading8"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - The time it takes for remedies to work can vary depending on
+                  the individual and the condition being treated. Acute
+                  conditions may respond quickly within minutes, while chronic
+                  conditions might take longer to improvement.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading9">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse9"
+                  aria-expanded="false"
+                  aria-controls="collapse9"
+                >
+                  <b
+                    >9. Can I take homeopathic remedies alongside conventional
+                    medicine?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse9"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading9"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Yes, homeopathic remedies can often be taken alongside
+                  conventional medicines(if required). However, it’s important
+                  that you inform us about the ongoing treatments.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading10">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse10"
+                  aria-expanded="false"
+                  aria-controls="collapse10"
+                >
+                  <b>10. How should I store my homeopathic remedies?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse10"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading10"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Homeopathic remedies should be stored in a cool, dry place
+                  away from strong odors, direct sunlight, and electromagnetic
+                  fields (such as microwaves and computers).
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading11">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse11"
+                  aria-expanded="false"
+                  aria-controls="collapse11"
+                >
+                  <b
+                    >11. What is the difference between homeopathy and herbal
+                    medicine?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse11"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading11"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Homeopathy uses highly diluted substances to stimulate the
+                  body’s healing process, while herbal medicine uses extracts
+                  from plants in their natural concentrations to treat various
+                  conditions.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading12">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse12"
+                  aria-expanded="false"
+                  aria-controls="collapse12"
+                >
+                  <b
+                    >12. Do homeopathic remedies interact with food or other
+                    supplements?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse12"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading12"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Generally, homeopathic remedies do not interact with food or
+                  supplements. However, it’s advised to take them before meals
+                  and avoid strong flavors like mint or coffee shortly before
+                  and after taking the remedy. Note: There is no abstinence from
+                  such substances in general during the course of medicine.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading13">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse13"
+                  aria-expanded="false"
+                  aria-controls="collapse13"
+                >
+                  <b>13. How do I know if homeopathy is right for me?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse13"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading13"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - If you are looking for a natural, holistic approach to
+                  health that aims to treat the root cause of your symptoms
+                  rather than just the symptoms themselves, homeopathy might be
+                  a suitable option. Holistic Homoeo Healing by Dr. Niyanta is
+                  the perfect place for transparent and best homeopathic
+                  treatments.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading14">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse14"
+                  aria-expanded="false"
+                  aria-controls="collapse14"
+                >
+                  <b
+                    >14. What should I do if my symptoms worsen after taking a
+                    homeopathic remedy?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse14"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading14"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - If your symptoms worsen, this might be a temporary
+                  homeopathic aggravation. However, if you are concerned or the
+                  symptoms persist, it’s important to consult Dr. Niyanta.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading15">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse15"
+                  aria-expanded="false"
+                  aria-controls="collapse15"
+                >
+                  <b>15. How often do I need to visit the clinic?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse15"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading15"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - The frequency of visits depends on your individual health
+                  needs and response to treatment. Initially, you might have
+                  more frequent visits, which may become less frequent as your
+                  condition improves.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading16">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse16"
+                  aria-expanded="false"
+                  aria-controls="collapse16"
+                >
+                  <b>16. Is homeopathy covered by health insurance?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse16"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading16"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Coverage for homeopathy varies by insurance plan and region.
+                  It’s best to check with your insurance provider to understand
+                  what is covered.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading17">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse17"
+                  aria-expanded="false"
+                  aria-controls="collapse17"
+                >
+                  <b>17. Can homeopathy help with chronic conditions?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse17"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading17"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Yes, homeopathy is very effective for chronic conditions as
+                  it cures by addressing the underlying imbalances in the body.
+                  It aims to improve overall health and well-being over time.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading18">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse18"
+                  aria-expanded="false"
+                  aria-controls="collapse18"
+                >
+                  <b>18. What should I bring to my homeopathic consultation?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse18"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading18"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Bring any relevant medical records, a list of current
+                  medications and supplements, and notes on your symptoms and
+                  health history. This information will help Dr. Niyanta to
+                  tailor the treatment to your needs.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading19">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse19"
+                  aria-expanded="false"
+                  aria-controls="collapse19"
+                >
+                  <b>19. How are homeopathic dosages determined?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse19"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading19"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Dosages are determined based on the individual’s specific
+                  symptoms, overall health, and the nature of the condition
+                  being treated. The homeopath will prescribe the appropriate
+                  potency and frequency.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading20">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse20"
+                  aria-expanded="false"
+                  aria-controls="collapse20"
+                >
+                  <b>20. What is the philosophy behind homeopathy?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse20"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading20"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - The philosophy of homeopathy is based on the principles of
+                  treating the individual holistically, using the law of
+                  similars (like cures like), and the concept of potentization
+                  to create remedies that stimulate the body’s self-healing
+                  abilities.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-faqs-sub-heading">
+          <h2>Counseling Psychology FAQ</h2>
+        </div>
+        <div class="c-faqs-content-container">
+          <div class="accordion" id="accordionExample">
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-1"
+                  aria-expanded="false"
+                  aria-controls="collapse-1"
+                >
+                  <b> 1. What is counseling psychology?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse-1"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-1"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Counseling psychology is a specialty within psychology that
+                  focuses on facilitating personal and interpersonal functioning
+                  across the lifespan. It addresses emotional, social, work,
+                  school, and physical health concerns through various
+                  therapeutic techniques.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-2">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-2"
+                  aria-expanded="false"
+                  aria-controls="collapse-2"
+                >
+                  <b>
+                    2. What issues can be addressed through counseling
+                    psychology?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse-2"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-2"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Counseling psychology can help with a wide range of issues
+                  including anxiety, depression, relationship problems, stress
+                  management, career counseling, grief and loss, and personal
+                  development.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-3">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-3"
+                  aria-expanded="false"
+                  aria-controls="collapse-3"
+                >
+                  <b>
+                    3. What should I expect during my first counseling
+                    session?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse-3"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-3"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - In your first session, Dr. Niyanta will typically gather
+                  information about your background, current issues, and goals
+                  for therapy. It’s also an opportunity to discuss
+                  confidentiality, therapy approaches, and establish a rapport.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading--4">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse--4"
+                  aria-expanded="false"
+                  aria-controls="collapse--4"
+                >
+                  <b> 4. How long does each counseling session last?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse--4"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading--4"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Most counseling sessions last between 45 to 60 minutes. The
+                  length and frequency of sessions depend on your individual
+                  needs and the therapist’s approach.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-5">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-5"
+                  aria-expanded="false"
+                  aria-controls="collapse-5"
+                >
+                  <b> 5. How many sessions will I need?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse-5"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-5"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - The number of sessions varies based on the nature of your
+                  concerns and your progress. Some issues may require short-term
+                  therapy, while others might benefit from a longer-term
+                  approach. Keeping in mind these requirements we have tailor-
+                  made packages for you to choose from.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-6">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-6"
+                  aria-expanded="true"
+                  aria-controls="collapse-6"
+                >
+                  <b> 6. Is counseling confidential?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse-6"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-6"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Yes, counseling is confidential. We adhere to strict ethical
+                  guidelines to protect your privacy. Exceptions include
+                  situations involving harm to yourself or others, abuse, or
+                  court orders.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-7">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-7"
+                  aria-expanded="false"
+                  aria-controls="collapse-7"
+                >
+                  <b>
+                    7. What should I do if I feel uncomfortable with Dr.
+                    Niyanta?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse-7"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-7"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - It’s important to feel comfortable with your counselor. If
+                  you feel uneasy, discuss your concerns with them. If the issue
+                  persists, consider seeking a different counselor who may be a
+                  better fit.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-8">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-8"
+                  aria-expanded="false"
+                  aria-controls="collapse-8"
+                >
+                  <b> 8. How do I know if I need counseling?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse-8"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-8"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Consider counseling if you’re experiencing persistent
+                  emotional distress, difficulty managing stress, relationship
+                  problems, or a desire for personal growth. A consultation
+                  session with Dr. Niyanta can help determine if counseling is
+                  appropriate for you.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-9">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-9"
+                  aria-expanded="false"
+                  aria-controls="collapse-9"
+                >
+                  <b> 9. Can counseling help with anxiety and depression?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse-9"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-9"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Yes, counseling is effective for treating anxiety and
+                  depression. Therapists use various evidence-based techniques
+                  such as cognitive-behavioral therapy (CBT) to help manage and
+                  reduce symptoms.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-10">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-10"
+                  aria-expanded="false"
+                  aria-controls="collapse-10"
+                >
+                  <b>
+                    10. What is the difference between counseling and
+                    therapy?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse-10"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-10"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - The terms are often used interchangeably, but counseling
+                  generally focuses on specific issues and is shorter-term,
+                  while therapy tends to be longer-term and addresses broader
+                  patterns of behavior and emotional issues.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-11">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-11"
+                  aria-expanded="false"
+                  aria-controls="collapse-11"
+                >
+                  <b> 11. Do you offer online counseling sessions?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse-11"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-11"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Yes, we offer online sessions also known as teletherapy,
+                  which can provide flexibility and convenience for those unable
+                  to attend in-person sessions.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-12">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-12"
+                  aria-expanded="false"
+                  aria-controls="collapse-12"
+                >
+                  <b>
+                    12. Do you take up couple counselling sessions as well?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse-12"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-12"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  -Yes we take couple counselling sessions for enhancing
+                  communication, resolving conflicts, and strengthening
+                  emotional connections. It provides tools to rebuild trust,
+                  improve intimacy, and navigate life changes, fostering a
+                  healthier and more fulfilling relationship.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-13">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-13"
+                  aria-expanded="false"
+                  aria-controls="collapse-13"
+                >
+                  <b> 13. How can counseling help with stress management?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse-13"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-13"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Counseling can help you identify the sources of stress,
+                  develop coping strategies, and implement techniques such as
+                  relaxation exercises, time management, and cognitive
+                  restructuring to manage stress more effectively.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-14">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-14"
+                  aria-expanded="false"
+                  aria-controls="collapse-14"
+                >
+                  <b>
+                    14. Is counseling suitable for children and adolescents?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse-14"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-14"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Yes, counseling can be very beneficial for children and
+                  adolescents, addressing issues such as behavioral problems,
+                  anxiety, depression, family conflicts, and developmental
+                  concerns.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-15">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-15"
+                  aria-expanded="false"
+                  aria-controls="collapse-15"
+                >
+                  <b>
+                    15. Do you offer in person visits to your clinic for
+                    counselling ?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse-15"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-15"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Most of our sessions are done online but in case you wish to
+                  visit the clinic in person, we have kept 5 slots for Sundays
+                  that you can book on special request.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-16">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-16"
+                  aria-expanded="false"
+                  aria-controls="collapse-16"
+                >
+                  <b> 16. What are the benefits of group counseling?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse-16"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-16"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Group counseling provides support from peers facing similar
+                  issues, offers different perspectives, enhances social skills,
+                  and helps individuals realize they are not alone in their
+                  struggles.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-17">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-17"
+                  aria-expanded="false"
+                  aria-controls="collapse-17"
+                >
+                  <b> 17. How should I prepare for a counseling session?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse-17"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-17"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Reflect on the issues you want to address, be open to
+                  discussing your feelings and experiences, and consider setting
+                  specific goals for what you hope to achieve through
+                  counseling.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-18">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-18"
+                  aria-expanded="false"
+                  aria-controls="collapse-18"
+                >
+                  <b>
+                    18. What if I don’t know what to talk about during a
+                    session?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse-18"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-18"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - It’s okay if you’re unsure what to talk about. Dr. Niyanta
+                  will guide the session, ask questions, and help you explore
+                  your thoughts and feelings. Over time, topics will naturally
+                  arise.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-19">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-19"
+                  aria-expanded="false"
+                  aria-controls="collapse-19"
+                >
+                  <b> 19. How do I know if counseling is working for me?</b>
+                </button>
+              </h2>
+              <div
+                id="collapse-19"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-19"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - Signs that counseling is working include feeling heard and
+                  understood, experiencing emotional relief, gaining new
+                  insights, and noticing positive changes in your thoughts,
+                  feelings, and behaviors.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-20">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-20"
+                  aria-expanded="false"
+                  aria-controls="collapse-20"
+                >
+                  <b>
+                    20. What should I do in case of a mental health
+                    emergency?</b
+                  >
+                </button>
+              </h2>
+              <div
+                id="collapse-20"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading-20"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  - In a mental health emergency, contact Dr. Niyanta and book
+                  an SOS session. You can also visit your nearest hospital in
+                  worst case scenario.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!--  About us page content section end -->
+
+    <!-- footer section start  -->
+    <footer class="container-fluid c-footer-container">
+      <p>©2024 Homio.com All Rights Reserved</p>
+    </footer>
+    <!-- footer section end  -->
+
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
